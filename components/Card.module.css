@@ -1,0 +1,22 @@
+.repo {
+  border: 1px #eaeaea solid;
+  border-radius: 6px;
+  flex: 1;
+  min-width: 324px;
+  padding: 24px;
+  transition: 0.3;
+}
+
+.repo:hover {
+  border: none;
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.repoName {
+  font-weight: 600;
+}
+
+.repoDescription {
+  margin: 14px 0;
+}

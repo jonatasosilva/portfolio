@@ -1,0 +1,95 @@
+.container {
+  width: 90%;
+  max-width: 720px;
+  margin: auto;
+}
+
+.introducing {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.introducingTitle {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.introducingTitle span {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.introducingText {
+  margin-top: 12px;
+}
+
+.skills {
+  margin-top: 48px;
+}
+
+.skillsTitle {
+  font-weight: 600;
+  text-align: center;
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.skillItem {
+  background-color: #8743CC;
+  color: #ffffff;
+  display: inline;
+  font-size: 14px;
+  border-radius: 22px;
+  padding: 6px 12px;
+}
+
+.skillItem:hover {
+  background-color: #8f4fcf;
+  cursor: default;
+}
+
+.repos {
+  margin: auto;
+  margin-top: 48px;
+}
+
+.reposTitle {
+  font-weight: 600;
+  text-align: center;
+}
+
+.reposCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  margin: 24px 0;
+}
+
+.reposLink {
+  text-align: center;
+}
+
+.reposLink a {
+  font-weight: 600;
+}
+
+.form {
+  margin: auto;
+  margin-top: 48px;
+}
+
+.formTitle {
+  font-weight: 600;
+  text-align: center;
+}
+
+.form {
+  margin-bottom: 24px;
+}

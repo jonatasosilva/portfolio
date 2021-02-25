@@ -1,0 +1,25 @@
+.inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.inputDiv {
+  min-width: 324px;
+  flex: 1;
+}
+
+.input {
+  border: 1px #333 solid;
+  border-radius: 6px;
+  padding: 6px;
+  width: 100%;
+  margin-top: 6px;
+  font-size: 16px;
+}
+
+.submitButton {
+  margin-top: 6px;
+}
