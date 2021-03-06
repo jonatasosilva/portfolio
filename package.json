@@ -15,8 +15,6 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.1.0",
-    "react-toast-notifications": "^2.4.0",
-    "remark": "^13.0.0",
-    "remark-html": "^13.0.1"
+    "react-toast-notifications": "^2.4.0"
   }
 }
