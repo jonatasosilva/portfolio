@@ -8,20 +8,6 @@ import Form from "../components/Form";
 import styles from "../styles/index.module.css";
 
 function HomePage({ repos }) {
-  const skills = [
-    "JavaScript",
-    "TypeScript",
-    "PHP",
-    "Python",
-    "Java",
-    "SQL",
-    "React",
-    "Node.js",
-    "Git",
-    "Docker",
-    "Linux",
-  ];
-
   return (
     <div className={styles.container}>
       <Head>
@@ -43,19 +29,6 @@ function HomePage({ repos }) {
             Estudante de Ciência da Computação no 5º período | 20 anos | Focado
             em desenvolvimento web há 6 meses.
           </p>
-        </div>
-
-        <div className={styles.skills}>
-          <h2 className={styles.skillsTitle}>Habilidades</h2>
-          <ul className={styles.skillsList}>
-            {skills.map((skill) => {
-              return (
-                <li key={skill} className={styles.skillItem}>
-                  {skill}
-                </li>
-              );
-            })}
-          </ul>
         </div>
 
         <div className={styles.repos}>

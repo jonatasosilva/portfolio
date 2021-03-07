@@ -23,37 +23,6 @@
   margin-top: 12px;
 }
 
-.skills {
-  margin-top: 48px;
-}
-
-.skillsTitle {
-  font-weight: 600;
-  text-align: center;
-}
-
-.skillsList {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 6px;
-  margin-top: 12px;
-}
-
-.skillItem {
-  background-color: #8743cc;
-  color: #ffffff;
-  display: inline;
-  font-size: 14px;
-  border-radius: 22px;
-  padding: 6px 12px;
-}
-
-.skillItem:hover {
-  background-color: #8f4fcf;
-  cursor: default;
-}
-
 .repos {
   margin-bottom: 4rem;
 }
