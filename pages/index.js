@@ -1,8 +1,10 @@
 import Head from "next/head";
 import { ToastProvider } from "react-toast-notifications";
+import { getRepos } from "../lib/repos";
+
 import Card from "../components/Card";
 import Form from "../components/Form";
-import { getRepos } from "../lib/repos";
+
 import styles from "../styles/index.module.css";
 
 function HomePage({ repos }) {
@@ -57,25 +59,22 @@ function HomePage({ repos }) {
         </div>
 
         <div className={styles.repos}>
-          <h2 className={styles.reposTitle}>Veja meus projetos :)</h2>
+          <h1>
+            <span>/</span>outros-projetos
+          </h1>
 
-          <div className={styles.reposCards}>
+          <div className={styles.cards}>
             {repos.map((repo) => (
               <Card
-                key={repo.id}
+                key={repo.name}
                 name={repo.name}
                 description={repo.description}
-                htmlUrl={repo.html_url}
+                homepage={repo.homepage}
+                htmlUrl={repo.htmlUrl}
+                topics={repo.topics}
               />
             ))}
           </div>
-
-          <h3 className={styles.reposLink}>
-            Todos os meus repositórios estão no{" "}
-            <a href={`https://github.com/jonatasosilva`} target="_blank">
-              GitHub
-            </a>
-          </h3>
         </div>
 
         <div className={styles.form}>
@@ -88,12 +87,12 @@ function HomePage({ repos }) {
 }
 
 export async function getStaticProps() {
-  const reposToShow = [
-    "socialape",
+  const repos = await getRepos([
     "dsdeliver-sds2",
     "knowledge",
-  ];
-  const repos = await getRepos(reposToShow);
+    "happy",
+    "be-the-hero",
+  ]);
 
   return {
     props: {

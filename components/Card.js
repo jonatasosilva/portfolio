@@ -1,17 +1,34 @@
-import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa";
+import { FaGithub, FaExternalLinkSquareAlt } from "react-icons/fa";
 import styles from "./Card.module.css";
 
-export default function RepoCard(props) {
+function Card({ name, description, homepage, htmlUrl, topics }) {
   return (
-    <div className={styles.repo}>
-      <Link href={`/repos/${props.name}`}>
-        <div>
-          <h3 className={styles.repoName}>{props.name}</h3>
-          <p className={styles.repoDescription}>{props.description}</p>
-          <FaArrowRight size={14} color="#8743CC" />
+    <div className={styles.wrapper}>
+      <div>
+        <div className={styles.header}>
+          <h3 className={styles.name}>{name}</h3>
+          <div>
+            {homepage && (
+              <a href={homepage} target="_blank" className={styles.homepage}>
+                <FaExternalLinkSquareAlt size={24} />
+              </a>
+            )}
+            <a href={htmlUrl} target="_blank">
+              <FaGithub size={24} />
+            </a>
+          </div>
         </div>
-      </Link>
+
+        <p className={styles.description}>{description}</p>
+      </div>
+
+      <ul className={styles.topics}>
+        {topics.map((topic) => (
+          <li key={topic}>{topic}</li>
+        ))}
+      </ul>
     </div>
   );
 }
+
+export default Card;

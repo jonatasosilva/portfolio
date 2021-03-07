@@ -1,7 +1,7 @@
 .container {
   width: 90%;
-  max-width: 720px;
-  margin: auto;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .introducing {
@@ -41,7 +41,7 @@
 }
 
 .skillItem {
-  background-color: #8743CC;
+  background-color: #8743cc;
   color: #ffffff;
   display: inline;
   font-size: 14px;
@@ -55,29 +55,24 @@
 }
 
 .repos {
-  margin: auto;
-  margin-top: 48px;
+  margin-bottom: 4rem;
 }
 
-.reposTitle {
+.repos h1 {
   font-weight: 600;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
-.reposCards {
+.repos h1 span {
+  color: #2f80ed;
+  font-size: 90%;
+}
+
+.repos .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 18px;
-  margin: 24px 0;
-}
-
-.reposLink {
-  text-align: center;
-}
-
-.reposLink a {
-  font-weight: 600;
+  gap: 1rem;
 }
 
 .form {
