@@ -4,23 +4,37 @@
   margin: 0 auto;
 }
 
-.introducing {
-  margin-top: 48px;
+.about {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .name {
+  font-size: 36px;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
-.introducingTitle {
-  font-size: 24px;
-  line-height: 1.2;
+.about .name span {
+  color: #2F80ED;
+  font-weight: 600;
 }
 
-.introducingTitle span {
-  font-size: 48px;
-  font-weight: 700;
+.about .bio {
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-.introducingText {
-  margin-top: 12px;
+.about .social a {
+  margin-right: 1rem;
+}
+
+.about .social a:last-of-type {
+  margin-right: 0;
 }
 
 .repos {
