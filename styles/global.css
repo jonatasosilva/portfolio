@@ -3,13 +3,22 @@
 html,
 body {
   font-family: 'Poppins', sans-serif;
-  color: #111;
+  color: #ffffff;
+  background-color: #0e0e10;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
 }
 
 input, textarea, button {
@@ -20,22 +29,8 @@ textarea {
   resize: none;
 }
 
-button {
-  background-color: #8743CC;
-  border: none;
-  border-radius: 6px;
-  color: white;
-  cursor: pointer;
-  font-weight: 600;
-  padding: 12px 24px;
-}
-
-button:hover {
-  background-color: #8f4fcf;
-}
-
 a {
-  color: #8743CC;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -44,13 +39,5 @@ a:hover {
 }
 
 a:visited {
-  color: #8743CC;
-}
-
-ul {
-  list-style: none;
-}
-
-h1, h2, h3 {
-  font-weight: normal;
+  color: #ffffff;
 }
