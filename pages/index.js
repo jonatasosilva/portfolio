@@ -3,12 +3,13 @@ import { ToastProvider } from "react-toast-notifications";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { getRepos } from "../lib/repos";
 
+import Project from "../components/Project";
 import Card from "../components/Card";
 import Form from "../components/Form";
 
 import styles from "../styles/index.module.css";
 
-function HomePage({ repos }) {
+function HomePage({ projects, repos }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -37,6 +38,23 @@ function HomePage({ repos }) {
               <FaLinkedin size={32} />
             </a>
           </div>
+        </div>
+
+        <div className={styles.showcase}>
+          <h1>
+            <span>/</span>principais-projetos
+          </h1>
+          {projects.map((project) => (
+            <Project
+              key={project.name}
+              name={project.name}
+              description={project.description}
+              homepage={project.homepage}
+              htmlUrl={project.htmlUrl}
+              topics={project.topics}
+              cover={project.cover}
+            />
+          ))}
         </div>
 
         <div className={styles.repos}>
@@ -68,6 +86,18 @@ function HomePage({ repos }) {
 }
 
 export async function getStaticProps() {
+  const projects = await getRepos([
+    "socialape",
+    "desafio_EstagioDesenvolvimento",
+  ]);
+
+  projects[0].name = "SocialApe";
+  projects[0].cover =
+    "https://raw.githubusercontent.com/jonatasosilva/socialape/master/assets/cover.gif";
+  projects[1].name = "Weather App";
+  projects[1].cover =
+    "https://raw.githubusercontent.com/jonatasosilva/desafio_EstagioDesenvolvimento/master/assets/cover.gif";
+
   const repos = await getRepos([
     "dsdeliver-sds2",
     "knowledge",
@@ -77,6 +107,7 @@ export async function getStaticProps() {
 
   return {
     props: {
+      projects,
       repos,
     },
   };

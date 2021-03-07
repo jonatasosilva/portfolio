@@ -37,6 +37,21 @@
   margin-right: 0;
 }
 
+.showcase {
+  margin-bottom: 4rem;
+}
+
+.showcase h1 {
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.showcase h1 span {
+  color: #2f80ed;
+  font-size: 90%;
+}
+
 .repos {
   margin-bottom: 4rem;
 }
