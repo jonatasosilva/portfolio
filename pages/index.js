@@ -76,8 +76,10 @@ function HomePage({ projects, repos }) {
           </div>
         </div>
 
-        <div className={styles.form}>
-          <h2 className={styles.formTitle}>Contato</h2>
+        <div className={styles.contact}>
+          <h1>
+            <span>/</span>contato
+          </h1>
           <Form />
         </div>
       </ToastProvider>

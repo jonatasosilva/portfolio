@@ -35,9 +35,9 @@ function Form() {
   }
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit}>
-      <div className={styles.inputs}>
-        <div className={styles.inputDiv}>
+    <form onSubmit={handleSubmit}>
+      <div className={styles.fields}>
+        <div className={styles.field}>
           <label>Nome: </label>
           <input
             type="text"
@@ -47,7 +47,7 @@ function Form() {
             className={styles.input}
           />
         </div>
-        <div className={styles.inputDiv}>
+        <div className={styles.field}>
           <label>E-mail: </label>
           <input
             type="text"
@@ -57,7 +57,7 @@ function Form() {
             className={styles.input}
           />
         </div>
-        <div className={styles.inputDiv}>
+        <div className={styles.field}>
           <label>Mensagem: </label>
           <textarea
             value={message}

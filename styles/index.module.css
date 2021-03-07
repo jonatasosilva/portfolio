@@ -20,7 +20,7 @@
 }
 
 .about .name span {
-  color: #2F80ED;
+  color: #2f80ed;
   font-weight: 600;
 }
 
@@ -73,16 +73,17 @@
   gap: 1rem;
 }
 
-.form {
-  margin: auto;
-  margin-top: 48px;
+.contact {
+  margin-bottom: 2rem;
 }
 
-.formTitle {
+.contact h1 {
   font-weight: 600;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
-.form {
-  margin-bottom: 24px;
+.contact h1 span {
+  color: #2f80ed;
+  font-size: 90%;
 }

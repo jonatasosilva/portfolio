@@ -1,19 +1,18 @@
-.inputs {
+.fields {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 12px;
+  gap: 1rem;
 }
 
-.inputDiv {
-  min-width: 324px;
-  flex: 1;
+.field {
+  flex: 1 1 calc(768px / 2 - 1rem);
 }
 
 .input {
-  border: 1px #333 solid;
-  border-radius: 6px;
+  background-color: transparent;
+  border: 1px #ffffff solid;
+  border-radius: 5px;
+  color: #ffffff;
   padding: 6px;
   width: 100%;
   margin-top: 6px;
@@ -21,5 +20,12 @@
 }
 
 .submitButton {
+  background-color: #2f80ed;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
   margin-top: 6px;
+  padding: 12px 24px;
 }
