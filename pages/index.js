@@ -90,7 +90,7 @@ function HomePage({ projects, repos }) {
 export async function getStaticProps() {
   const projects = await getRepos([
     "socialape",
-    "desafio_EstagioDesenvolvimento",
+    "weather-app",
   ]);
 
   projects[0].name = "SocialApe";
@@ -98,7 +98,7 @@ export async function getStaticProps() {
     "https://raw.githubusercontent.com/jonatasosilva/socialape/master/assets/cover.gif";
   projects[1].name = "Weather App";
   projects[1].cover =
-    "https://raw.githubusercontent.com/jonatasosilva/desafio_EstagioDesenvolvimento/master/assets/cover.gif";
+    "https://raw.githubusercontent.com/jonatasosilva/weather-app/main/assets/cover.gif";
 
   const repos = await getRepos([
     "dsdeliver-sds2",
